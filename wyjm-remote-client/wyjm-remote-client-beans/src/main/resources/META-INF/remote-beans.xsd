@@ -1,0 +1,36 @@
+<xsd:schema xmlns="http://www.wyjm.remote.com/schema"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.wyjm.remote.com/schema">
+    <xsd:complexType name="complexType">
+        <xsd:attribute name="id" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The complexType  id. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="ip" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The complexType  ip. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="port" type="xsd:int">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The complexType  port. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="interfaceClass" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The complexType  interfaceClass. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="retries" type="xsd:int">
+            <xsd:annotation>
+                <xsd:documentation><![CDATA[ The complexType  retries. ]]></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+    <xsd:element name="consumer" type="complexType">
+        <xsd:annotation>
+            <xsd:documentation><![CDATA[ consumer 的文档 ]]></xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

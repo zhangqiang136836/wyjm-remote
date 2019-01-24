@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cli="http://www.wyjm.remote.com/schema"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.wyjm.remote.com/schema http://www.wyjm.remote.com/schema/remote-beans.xsd">
+    <cli:consumer id="userService" ip="127.0.0.1" port="2020"
+                  interfaceClass="com.jd.wyjm.demo.server.service.IUserService"></cli:consumer>
+</beans>
